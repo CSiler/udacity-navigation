@@ -27,7 +27,7 @@ Local network parameters are then updated using Adam optimizer and a learning ra
 
 ## Results
 
-![Training path](images/training.gif)
+![Training path](images/training.png)
 
 The described approach achieved an average score of 13 points over the last 100 episodes after 513 episodes of training.
 
