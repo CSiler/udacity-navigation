@@ -1,17 +1,3 @@
-# udacity-navigation
-## Project environment details
-This repository solves the first project assignment of Udacity's Deep Reinforcement Learning Nanodegree. 
-
-Included is a self-learning agent that learns to navigate in a virtual world based on the Unity engine to collect yellow bananas while avoiding blue bananas. Every yellow banana collected rewards one point to the agent while every blue banana costs one point.
-
-![banana](images/banana.gif)
-
-The environment's state gives the agent a 6x6 pixel view on its surroundings. Additionally, one input is dedicated to the agent's velocity, adding up to 37 state parameters. 
-
-Based on this perception the agent may choose one of four actions, e.g. turn left or right and move forward or backward.
-
-The challenge is considered solved if the agent manages to collect more than 13 points in average over 100 consecutive episodes.
-
 ## Solution architecture
 The agent uses the Double DQN approach with two duplicate neural networks consisting of three fully connected layers with 64 nodes each and RELU activation functions. The "local" networks' parameters are updated on every learning step while the "target" networks' parameters are softly nudged towards the "local" networks' parameter values with an adjustment factor of .001.
 
