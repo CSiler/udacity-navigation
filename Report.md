@@ -12,12 +12,6 @@ Based on this perception the agent may choose one of four actions, e.g. turn lef
 
 The challenge is considered solved if the agent manages to collect more than 13 points in average over 100 consecutive episodes.
 
-## Getting started
-
-The project was solved using Udacity's prepared cloud servers. For runtime requirements please refer to Navigation.ipynb
-
-Required files for training and running the agent are model.py, dqn_agent.py and Navigation.ipynb. Model.py includes the agent's neural network, dqn_agent.py consists of the agent's memory collection and training routine and solution.ipynb has this agent interact with the preset Unity world.
-
 ## Solution architecture
 The agent uses the Double DQN approach with two duplicate neural networks consisting of three fully connected layers with 64 nodes each and RELU activation functions. The "local" networks' parameters are updated on every learning step while the "target" networks' parameters are softly nudged towards the "local" networks' parameter values with an adjustment factor of .001.
 
